@@ -1,0 +1,50 @@
+<ion-side-menus enable-menu-with-back-views="false">
+  <ion-side-menu-content>
+    <ion-nav-bar class="bar-energized">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+
+      <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        </button>
+      </ion-nav-buttons>
+
+      <ion-nav-buttons side="right">
+        <button class="button button-icon button-clear ion-android-cart" ng-click="openCart()">
+        </button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent"></ion-nav-view>
+  </ion-side-menu-content>
+
+  <ion-side-menu side="left">
+    <ion-header-bar class="bar-energized">
+      <h1 class="title">9404469443, Thane East</h1>
+    </ion-header-bar>
+    <ion-content>
+      <ion-list>
+        <ion-item menu-close href="#/app/home">
+          <i class="icon ion-home shop-side-menus"></i>Home
+        </ion-item>
+        <ion-item menu-close href="#/app/address">
+          <i class="icon ion-location shop-side-menus"></i>Addresses
+        </ion-item>
+        <ion-item menu-close href="#/app/my-orders">
+          <i class="icon ion-bag shop-side-menus"></i>My Orders
+        </ion-item>
+        <ion-item menu-close href="#/app/login">
+          <i class="icon ion-log-in shop-side-menus"></i>Login
+        </ion-item>
+        <ion-item menu-close href="#/app/rate-us">
+          <i class="icon ion-star shop-side-menus"></i>Rate Us
+        </ion-item>
+        <ion-item menu-close href="#/app/customer-service">
+          <i class="icon ion-android-people shop-side-menus"></i>Customer Service
+        </ion-item>
+        <ion-item menu-close href="#/app/logout">
+          <i class="icon ion-log-out shop-side-menus"></i>Logout
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>

@@ -1,0 +1,23 @@
+<ion-view view-title="{{category.name}}">
+	<ion-content scroll="true" class="tabs-background-energized tabs-color-light">
+		<ion-slide-box show-pager="false" ion-slide-tabs>
+			<ion-slide ng-repeat="subcategory in category.subcategories" ion-slide-tab-label="{{subcategory.name}}">	
+				<div class="list" id="product-list">
+					<a class="item item-avatar" ng-repeat="product in subcategory.products" ng-click="getProductDetails(product)">
+					  <img ng-src="{{product.image}}">
+					  <div class="product-attr-box">
+						  <h2>{{product.name}}</h2>
+						  <p>{{product.packing?product.packing+' ':''}}{{product.wt}} {{product.wt_in}}</p>
+						  <p>&#8377; {{product.rate}} <span class="striked" ng-show="product.rate!=product.mrp">{{product.mrp}}</span></p>
+					  </div>
+					  <div class="change-quantity-box">
+						<span class="qty-increase energized" ng-click="updateCart($event,category.name,product,'inc')"><i class="icon ion-plus-circled"></i></span>
+						<span class="qty-txt"><input type="text" value="0" class="qty-txtbox" readonly /><input type="hidden" value="{{product}}"/></span>
+						<span class="qty-decrease energized" ng-click="updateCart($event,category.name,product,'dec')"><i class="icon ion-minus-circled"></i></span>
+					  </div>
+					</a>
+				</div>
+			</ion-slide>
+		</ion-slide-box>
+	</ion-content>
+</ion-view>

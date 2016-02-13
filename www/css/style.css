@@ -1,0 +1,42 @@
+/* Empty. Add your own CSS if you like */
+.shop-side-menus{
+	font-size:20px;
+	float:right;
+}
+.subcategory-tabs{
+	max-width: 100%;
+}
+.striked{
+	text-decoration:line-through;
+}
+.product-attr-box {
+    width: 70%;
+    float: left;
+}
+.change-quantity-box {
+    width: 30%;
+    float: right;
+    text-align: center;
+    padding-top: 20px;
+}
+input.qty-txtbox {
+    display: inline;
+    width: 50%;
+	margin-top: -10px;
+	text-align:center;
+}
+span.qty-increase,span.qty-decrease {
+    font-size: 25px;
+}
+.tac{
+	text-align:center;
+}
+.m0-auto{
+	margin:0 auto;
+}
+.f16 {
+    font-size: 16px;
+}
+.m-20{
+	margin:20px 0;
+}

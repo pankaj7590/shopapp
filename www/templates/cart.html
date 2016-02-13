@@ -1,0 +1,26 @@
+<ion-view view-title="Cart">
+	<ion-content>
+		<div ng-show="cart && cart.length<=0">
+				<div class="f16 tac m-20">
+					Your cart is empty. Start shopping.
+				</div>
+				<div class="tac">
+					<a href="#/app/categories" class="m0-auto"><button class="button button-energized m0-auto">Let's Go Shopping</button></a>
+				</div>
+		</div>
+		
+		<div ng-repeat="product in cart">
+			<div class="list card">
+				<div class="item">
+					<h2>{{product.item.name}}</h2>
+				</div>
+				<div class="item item-image">
+					<img src="{{product.item.image}}">
+				</div>
+				<div class="item assertive">
+					<h2>Quantity : {{product.qty}}</h2>
+				</div>
+			</div>
+		</div>
+	</ion-content>
+</ion-view>
